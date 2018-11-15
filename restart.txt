@@ -1,0 +1,13 @@
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
+export FLASK_APP=flaskr
+export FLASK_ENV=development
+flask run --host=0.0.0.0 --port=3000
+ 
+ 
+ sudo pip3 install waitress
+ waitress-serve --port=3000 --call 'flaskr:create_app'
+ 
+ flask run --host=0.0.0.0 --port=8000
+ 
+ python3 -m flask run --host=0.0.0.0 --port=3000
